@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "VUE_CLI_CSS_SHADOW_MODE=true vue-cli-service build --target wc --name my-component ./src/wc.ts",
+    "build:app": "vue-cli-service build"
   },
   "dependencies": {
+    "@vue/web-component-wrapper": "^1.2.0",
     "vue": "^2.5.17"
   },
   "devDependencies": {
